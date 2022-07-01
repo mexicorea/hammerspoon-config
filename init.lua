@@ -34,6 +34,10 @@ hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'P', function()
     hs.application.launchOrFocus('Postman')
 end)
 
+hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'F', function()
+    hs.application.launchOrFocus('Finder')
+end)
+
 hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Left', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
