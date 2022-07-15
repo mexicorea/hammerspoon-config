@@ -38,6 +38,10 @@ hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'F', function()
     hs.application.launchOrFocus('Finder')
 end)
 
+hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'K', function()
+    hs.application.launchOrFocus('KakaoTalk')
+end)
+
 hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Left', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
