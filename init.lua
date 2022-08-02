@@ -35,7 +35,7 @@ hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'P', function()
 end)
 
 hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'F', function()
-    hs.application.launchOrFocus('Finder')
+    hs.application.launchOrFocus('Figma')
 end)
 
 hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'K', function()
