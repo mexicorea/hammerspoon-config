@@ -1,48 +1,58 @@
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'M', function()
+local hotkeys = {'cmd', 'shift', 'ctrl'}
+
+hs.hotkey.bind(hotkeys, 'M', function()
     hs.application.launchOrFocus('Notes')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'C', function()
+hs.hotkey.bind(hotkeys, 'C', function()
     hs.application.launchOrFocus('Google Chrome')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'V', function()
+hs.hotkey.bind(hotkeys, 'V', function()
     hs.application.launchOrFocus('Visual Studio Code')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'T', function()
+hs.hotkey.bind(hotkeys, 'T', function()
     hs.application.launchOrFocus('iTerm')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'D', function()
+hs.hotkey.bind(hotkeys, 'D', function()
     hs.application.launchOrFocus('DBeaver')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'S', function()
+hs.hotkey.bind(hotkeys, 'S', function()
     hs.application.launchOrFocus('Slack')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'N', function()
+hs.hotkey.bind(hotkeys, 'N', function()
     hs.application.launchOrFocus('Notion')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'G', function()
+hs.hotkey.bind(hotkeys, 'G', function()
     hs.application.launchOrFocus('Gather')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'P', function()
+hs.hotkey.bind(hotkeys, 'P', function()
     hs.application.launchOrFocus('Postman')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'F', function()
+hs.hotkey.bind(hotkeys, 'F', function()
     hs.application.launchOrFocus('Figma')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'K', function()
+hs.hotkey.bind(hotkeys, 'K', function()
     hs.application.launchOrFocus('KakaoTalk')
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Left', function()
+hs.hotkey.bind(hotkeys, 'L', function()
+    hs.application.launchOrFocus('Line')
+end)
+
+hs.hotkey.bind(hotkeys, 'B', function()
+    hs.application.launchOrFocus('Bitwarden')
+end)
+
+hs.hotkey.bind(hotkeys, 'Left', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -55,7 +65,7 @@ hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Left', function()
   win:setFrame(f)
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Right', function()
+hs.hotkey.bind(hotkeys, 'Right', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -68,7 +78,7 @@ hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Right', function()
   win:setFrame(f)
 end)
 
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'Up', function()
+hs.hotkey.bind(hotkeys, 'Up', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
