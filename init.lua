@@ -52,6 +52,10 @@ hs.hotkey.bind(hotkeys, 'B', function()
     hs.application.launchOrFocus('Bitwarden')
 end)
 
+hs.hotkey.bind(hotkeys, 'E', function()
+    hs.application.launchOrFocus('Microsoft Edge')
+end)
+
 hs.hotkey.bind(hotkeys, 'Left', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
