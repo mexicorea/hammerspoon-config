@@ -13,15 +13,19 @@ hs.hotkey.bind(hotkeys, 'V', function()
 end)
 
 hs.hotkey.bind(hotkeys, 'T', function()
-    hs.application.launchOrFocus('iTerm')
+    hs.application.launchOrFocus('Warp')
 end)
 
-hs.hotkey.bind(hotkeys, 'D', function()
+hs.hotkey.bind(hotkeys, 'B', function()
     hs.application.launchOrFocus('DBeaver')
 end)
 
 hs.hotkey.bind(hotkeys, 'S', function()
     hs.application.launchOrFocus('Slack')
+end)
+
+hs.hotkey.bind(hotkeys, 'D', function()
+    hs.application.launchOrFocus('Discord')
 end)
 
 hs.hotkey.bind(hotkeys, 'N', function()
@@ -46,14 +50,6 @@ end)
 
 hs.hotkey.bind(hotkeys, 'L', function()
     hs.application.launchOrFocus('Line')
-end)
-
-hs.hotkey.bind(hotkeys, 'B', function()
-    hs.application.launchOrFocus('Bitwarden')
-end)
-
-hs.hotkey.bind(hotkeys, 'E', function()
-    hs.application.launchOrFocus('Microsoft Edge')
 end)
 
 hs.hotkey.bind(hotkeys, 'Left', function()
