@@ -52,6 +52,10 @@ hs.hotkey.bind(hotkeys, 'L', function()
     hs.application.launchOrFocus('Line')
 end)
 
+hs.hotkey.bind(hotkeys, 'Z', function()
+    hs.application.launchOrFocus('Zed')
+end)
+
 hs.hotkey.bind(hotkeys, 'Left', function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
